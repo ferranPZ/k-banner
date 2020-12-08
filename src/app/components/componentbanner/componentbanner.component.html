@@ -1,0 +1,46 @@
+<table class="table table-hover">
+   
+    <tbody>
+   
+        <div *ngIf="rta && rta.product.show ">
+
+            <div *ngIf="rta.product.type === 'cellphone'">
+                <div class="hero-image">
+                    <img class="img" src={{rta.product.productImg}} alt="">
+                    <div class="hero-text">
+                      <h1>{{rta.product.productName}}</h1>
+                     <p   >  {{ rta.product.productDescription}}</p>
+                      <a class="button" href={{rta.product.link}}> {{rta.product.buttonText}}
+                    </a>
+            
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div *ngIf="rta.product.type === 'plan'">
+                <div class="hero-image">
+                    <div class="hero-text">
+                      <h1>{{rta.product.productDescription}}</h1>
+                      <a class="button" href={{rta.product.link}}> {{rta.product.buttonText}}
+                    </a>
+            
+                    </div>
+                </div>
+
+            </div>
+
+
+
+          
+
+
+            
+           
+            
+            <p></p>
+            
+        </div>
+    </tbody>
+</table>
