@@ -2,16 +2,21 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { stringify } from 'querystring';
 
+
 @Component({
   selector: 'app-componentbanner',
   templateUrl: './componentbanner.component.html',
   styleUrls: ['./componentbanner.component.css']
 })
+
+
+
+
 export class ComponentbannerComponent implements OnInit {
 
 
   conversion:any;
-  rta:[];
+  rta: any;
 
 
   constructor(private http: HttpClient) { }
@@ -26,4 +31,7 @@ export class ComponentbannerComponent implements OnInit {
     });
   }
 
-}
+  }
+  
+
+
